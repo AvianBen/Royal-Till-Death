@@ -23,7 +23,7 @@
 navy: #658BBE 
 
 body {
-  background-color: var(--bg);
+  background-color: #D49DCD;
   color: var(--text);
   height: 100vh;
   width: 90vw;
@@ -45,12 +45,13 @@ img {
 (align:&quot;=&gt;&lt;=&quot;)[[Continue-&gt;Introduction]] </tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="" position="595,508" size="100,100">=&gt;&lt;=
 (text-colour:navy)[&#39;&#39;You are a notable detective in the realm, and you have just received word that your services are needed at the castle. The case is confidential, and thus you have received no more details beyond that.&#39;&#39;]
 The wooden drawbridge has dropped, you have arrived.
-(t8n-arrive:&quot;blur&quot;)[[Continue-&gt;Intro-1]]</tw-passagedata><tw-passagedata pid="3" name="Intro-1" tags="" position="602,644" size="100,100">(text-colour:navy)[You are walking through the castle doors]
-(text-colour:orange)[???: And what were you during during that time?!]
-(text-colour:gray)[???: My apologies my &#39;&#39;prince&#39;&#39; ]
-(text-colour:orange)[Prince: Your job is &#39;&#39;guard duty&#39;&#39; so how could you have not seen anything?]
-(text-colour:gray)[Guard: //Please forgive me// my lord, I will conduct an investigation to get to the bottom of this.]
-(text-colour:orange)[Prince: You should be &#39;&#39;executed&#39;&#39; for your &#39;&#39;failure&#39;&#39;! //[Storms off]//]
+(t8n-arrive:&quot;blur&quot;)[[Continue-&gt;Intro-1]]</tw-passagedata><tw-passagedata pid="3" name="Intro-1" tags="" position="602,644" size="100,100">(text-colour:navy)[You walk through the castle doors.]
+(text-colour:orange)[???: -and what were you doing during that time?!]
+(text-colour:gray)[???: My apologies my &#39;&#39;prince&#39;&#39;, I didn’t notice anything out of the ordinary. It was just like any other day, I swear it.]
+(text-colour:orange)[Prince:  You were supposed to be his &#39;&#39;guard &#39;&#39;! So how could you have not seen anything?]
+(text-colour:gray)[Guard: This is something I also plan on finding out. //Please forgive me// my lord, I will conduct an investigation to get to the bottom of this.]
+(text-colour:orange)[Prince: You should be &#39;&#39;executed&#39;&#39; for your &#39;&#39;failure&#39;&#39;!]
+(text-colour:navy)[ The Prince storms off towards your direction]
 [[Walk towards the Prince-&gt;Intro-2]]</tw-passagedata><tw-passagedata pid="4" name="Intro-2" tags="" position="595,786" size="100,100">(text-colour:orange)[Prince: Those useless good for nothings! Woe is me for my father has fallen! //[Notices the detective]//]
 (text-colour:orange)[Prince: points at the detective YOU! Were you eavesdropping on a private conversation? How rude.] 
 
@@ -276,12 +277,33 @@ You walk outside into the courtyard garden, there is a collection of exotic plan
 (text-colour:blue)[&#39;&#39;Detective&#39;&#39;: That is not what I asked your majesty.]
 (text-colour:purple)[&#39;&#39;Queen&#39;&#39;... I am not sure. If you truly wish to question him, here is the key to the Lothar&#39;s wizard tower.]
 (set: $inventory to $inventory + (a: &quot;wizard key&quot;))
-[[Thank you-&gt;Question Queen]]</tw-passagedata><tw-passagedata pid="70" name="wizard tower door" tags="" position="2366,134" size="100,100">(if: $inventory does not contain &quot;wizard key&quot;)[(text-colour:blue)[&#39;&#39;Detective&#39;&#39;://You decide to head to the Wizard’s Tower. You enter the left hall and approach the door to the Wizard’s Tower. You do not have the key.//]]
+[[Thank you-&gt;Question Queen]]</tw-passagedata><tw-passagedata pid="70" name="wizard tower door" tags="" position="2230,122" size="100,100">(if: $inventory does not contain &quot;wizard key&quot;)[(text-colour:blue)[&#39;&#39;Detective&#39;&#39;://You decide to head to the Wizard’s Tower. You enter the left hall and approach the door to the Wizard’s Tower. You do not have the key.//]]
 (if: $inventory contains &quot;wizard key&quot;)[(text-colour:blue)[&#39;&#39;Detective&#39;&#39;://You decide to head to the Wizard’s Tower. You enter the left hall and approach the door to the Wizard’s Tower. You have the key.//]]
 [[Return to Left Hallway-&gt;Left Hallway]] 
-(if: $inventory contains &quot;wizard key&quot;)[[[Enter the tower-&gt;Wizard&#39;s tower]]]</tw-passagedata><tw-passagedata pid="71" name="Wizard&#39;s tower" tags="" position="2519,130" size="100,100">(text-colour:blue)[&#39;&#39;Detective&#39;&#39;://You push open the door and see a spiralling staircase leading up. You walk up the stairs and arrive at an open archway that leads to a room. The room is full of jars full of ingredients and liquids. There is parchment paper full of mysterious writing strewn about. Hovering over a cauldron is the wizard.//]
+(if: $inventory contains &quot;wizard key&quot;)[[[Enter the tower-&gt;Wizard&#39;s tower]]]</tw-passagedata><tw-passagedata pid="71" name="Wizard&#39;s tower" tags="" position="2232,243" size="100,100">(text-colour:blue)[&#39;&#39;Detective&#39;&#39;://You push open the door and see a spiralling staircase leading up. You walk up the stairs and arrive at an open archway that leads to a room. The room is full of jars filled with various alchemy ingredients and liquids. There is parchment paper full of mysterious writing strewn about. Hovering over a cauldron is the wizard.//]
 [[Talk to Wizard-&gt;Wizard-1]]
-[[Return to bottom of tower-&gt;wizard tower door]] </tw-passagedata><tw-passagedata pid="72" name="Wizard-1" tags="" position="2653,66" size="100,100">(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: Excuse me sorry to bother you but I need to talk to you about the king.]</tw-passagedata></tw-storydata>
+[[Return to bottom of tower-&gt;wizard tower door]] </tw-passagedata><tw-passagedata pid="72" name="Wizard-1" tags="" position="2355,242" size="100,100">(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: Excuse me, sorry if I&#39;m interupting anything, however I need to talk to you about the king.]
+(text-colour:green)[//The wizard takes a deep breath before turning and looking at you.//]
+(text-colour:green)[&#39;&#39;Wizard&#39;&#39;: I know why you are here. I&#39;ll answer all of your questions.]
+(text-colour:blue)[&#39;&#39;Detective&#39;&#39;:// What would you like to say?//]
+[[Thank you. Where were you when the King died?-&gt;Wizard-2-1]]
+[[Did you know that Augustus is your child?-&gt;Wizard-2-2]]
+[[Did you kill the king?-&gt;Wizard-2-3]]</tw-passagedata><tw-passagedata pid="73" name="Wizard-2-1" tags="" position="2480,120" size="100,100">(text-colour:green)[&#39;&#39;Wizard&#39;&#39;: I was with Regin- ah, I mean the Queen, all night when he was murdered.
+(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: Do you have an alibi?]
+(text-colour:green)[&#39;&#39;Wizard&#39;&#39;: No I don’t, you will just have to take my word for it. However I do have a way to prove my innocence.]
+(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: How so?]
+(text-colour:green)[&#39;&#39;Wizard&#39;&#39;: Based off of the body I am assuming the King was stabbed repeatedly. As a man of science, I do not possess the physical aptitude to wield a sword, let alone stab someone multiple times. I can prove it, hand me the murder weapon.]
+(text-colour:blue)[&#39;&#39;Detective&#39;&#39;:// What do you do?//]
+[[Give him the pommel-&gt;Wizard-3-1]]
+[[Tell him that is not enough evidence to prove his innocence.-&gt;Wizard-3-2]]</tw-passagedata><tw-passagedata pid="74" name="Wizard-2-2" tags="" position="2484,226" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="75" name="Wizard-2-3" tags="" position="2486,337" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="76" name="Wizard-3-1" tags="" position="2610,59" size="100,100">(text-colour:navy)[// You hand Lothar the pommel. He grunts, and begins to strain to even lift it to a proper swinging height. Based off of this, it is clear that Lothar could not have been the one handling the sword. Lothar wipes the sweat off of his forehead and hands the pommel back to you.//]
+(text-colour:green)[&#39;&#39;Wizard&#39;&#39;: As you can see, I could not have been the murderer. Any other questions detective?]
+(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: If you were not the murderer, who do you suspect?]
+(text-colour:green)[&#39;&#39;Wizard&#39;&#39;: Why, isn’t it obvious? It was clearly the blacksmith. He has the most motive given the death of his son due to the disagreement with the king about burning the village. He also has the physical capabilities.]
+(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: Hmm I see, thank you for your input.]
+(text-colour:navy)[// As you turn to leave, you bump into a box containing various spells and incantations. One of them has a depiction of a necklace with a symbol of an eagle. It looks strangely familiar, but you can’t place exactly where you could have seen it before. The spell gives you a weird creepy vibe. As you stare, Lothar rushes over to clean the mess, and he swats your hand away.//]
+(text-colour:green)[&#39;&#39;Wizard&#39;&#39;: Don’t worry about this, I can clean up. It is highly sensitive magic that should not be touched by anyone else.]
+(text-colour:navy)[// You find the Wizard’s behavior to be very odd, but leave anyway. Who would you like to question next?//]
+</tw-passagedata><tw-passagedata pid="77" name="Wizard-3-2" tags="" position="2607,178" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
