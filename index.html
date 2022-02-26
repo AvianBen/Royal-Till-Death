@@ -9,51 +9,91 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Accessible Games Project.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Accessible Games Project" startnode="1" creator="Twine" creator-version="2.3.14" ifid="C8E0EB73-337A-4F03-8F74-47C1F3BE2C83" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-link, .enchantment-link {
+<tw-storydata name="Accessible Games Project" startnode="1" creator="Twine" creator-version="2.3.14" ifid="C8E0EB73-337A-4F03-8F74-47C1F3BE2C83" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+tw-story{
+	font-size: 24px;
+	background-color: #001219;
+	color: var(--text);
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+
+tw-passage{
+  	background-color: #E9D8A6;
+  	padding: 2em 2em 2em 2em;
+  	border-style: solid;
+	border-color: black;
+	border-radius: 15px;
+  	border-width: 2px;
+}
+
+tw-link, tw-enchantment{
+  	color: #001219;
 	display: inline-block;
 	padding: 2em 2em 2em 2em;
-	background-color: orange;
+	background-color: #CA6702;
 	margin: 0.5em;
-	border-width: 1px;
+	border-width: 3px;
 	border-style: solid;
 	border-color: black;
 	border-radius: 10px;
 }
 
-navy: #658BBE 
+tw-link:hover, tw-enchantment:hover { 
+  	color: #001219;
+  	display: inline-block;
+	padding: 2em 2em 2em 2em;
+	background-color: #EE9B00;
+	margin: 0.5em;
+	border-width: 3px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px; }
 
-body {
-  background-color: #D49DCD;
-  color: var(--text);
-  height: 100vh;
-  width: 90vw;
-  display: flex;
-  overflow: hidden;
-  margin: 0 auto;
-}
-.dm body {
-  background-color: var(--dm-bg);
-  color: var(--dm-text);
-}
+tw-link.visited { 
+  	color: #D0C5B1;
+  	display: inline-block;
+	padding: 2em 2em 2em 2em;
+	background-color: orange;
+	margin: 0.5em;
+	border-width: 3px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px; }
+
+tw-link.visited:hover { 
+  	color: #001219;
+  	display: inline-block;
+	padding: 2em 2em 2em 2em;
+	background-color: orange;
+	margin: 0.5em;
+	border-width: 3px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px; }
 
 img {
   	align-items: center;
 	width: 1000px;
   	height: auto;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Title Card" tags="" position="465,506" size="100,100">&lt;img src=&quot;images/royaltilldeathlogo.png&quot; /&gt;
+}
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Title Card" tags="" position="465,506" size="100,100">&lt;img src=&quot;images/royaltilldeathlogo.png&quot; /&gt;
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[A Fantasy Murder Mystery]
-(align:&quot;=&gt;&lt;=&quot;)[[Continue-&gt;Introduction]] </tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="" position="595,508" size="100,100">=&gt;&lt;=
-(text-colour:navy)[&#39;&#39;You are a notable detective in the realm, and you have just received word that your services are needed at the castle. The case is confidential, and thus you have received no more details beyond that.&#39;&#39;]
+(align:&quot;=&gt;&lt;=&quot;)[[Continue-&gt;Introduction]] </tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="" position="596,508" size="100,100">(text-colour:#1B4381)[&#39;&#39;You are a notable detective in the realm, and you have just received word that your services are needed at the castle. The case is confidential, and thus you have received no more details beyond that.&#39;&#39;]
 The wooden drawbridge has dropped, you have arrived.
-(t8n-arrive:&quot;blur&quot;)[[Continue-&gt;Intro-1]]</tw-passagedata><tw-passagedata pid="3" name="Intro-1" tags="" position="602,644" size="100,100">(text-colour:navy)[You walk through the castle doors.]
+(t8n-arrive:&quot;blur&quot;)[[Continue-&gt;Intro-1]]</tw-passagedata><tw-passagedata pid="3" name="Intro-1" tags="" position="603,643" size="100,100">(text-colour:#1B4381)[You walk through the castle doors.]
 (text-colour:orange)[???: -and what were you doing during that time?!]
-(text-colour:gray)[???: My apologies my &#39;&#39;prince&#39;&#39;, I didn’t notice anything out of the ordinary. It was just like any other day, I swear it.]
+(text-colour:#4B4F50 )[???: My apologies my &#39;&#39;prince&#39;&#39;, I didn’t notice anything out of the ordinary. It was just like any other day, I swear it.]
 (text-colour:orange)[Prince:  You were supposed to be his &#39;&#39;guard &#39;&#39;! So how could you have not seen anything?]
-(text-colour:gray)[Guard: This is something I also plan on finding out. //Please forgive me// my lord, I will conduct an investigation to get to the bottom of this.]
+(text-colour:#4B4F50 )[Guard: This is something I also plan on finding out. //Please forgive me// my lord, I will conduct an investigation to get to the bottom of this.]
 (text-colour:orange)[Prince: You should be &#39;&#39;executed&#39;&#39; for your &#39;&#39;failure&#39;&#39;!]
-(text-colour:navy)[ The Prince storms off towards your direction]
-[[Walk towards the Prince-&gt;Intro-2]]</tw-passagedata><tw-passagedata pid="4" name="Intro-2" tags="" position="595,786" size="100,100">(text-colour:orange)[Prince: Those useless good for nothings! Woe is me for my father has fallen! //[Notices the detective]//]
-(text-colour:orange)[Prince: points at the detective YOU! Were you eavesdropping on a private conversation? How rude.] 
+(text-colour:#1B4381)[ The Prince storms off towards your direction.]
+[[Walk towards the Prince-&gt;Intro-2]]</tw-passagedata><tw-passagedata pid="4" name="Intro-2" tags="" position="596,787" size="100,100">(text-colour:#9B4900       )[Prince: Those useless good for nothings! Woe is me for my father has fallen!]
+(text-colour:#1B4381)[ //The Prince storms off towards your direction//]
+(text-colour:#9B4900   )[Prince: YOU! Were you eavesdropping on a private conversation? How rude, what say you? 
+] 
 
 [[I had just arrived, I heard nothing.-&gt;Intro-Branch-1]]
 
@@ -61,82 +101,94 @@ The wooden drawbridge has dropped, you have arrived.
 [[You seem like quite a cold hearted fellow.-&gt;Intro-Branch-3]]
 
 
-[[Piss off I’m here for a case.-&gt;Intro-Branch-2]]</tw-passagedata><tw-passagedata pid="5" name="Intro-Branch-1" tags="" position="722,696" size="100,100">(text-colour:orange)[Prince: Is that so? Why are you here?]
+[[Piss off I’m here for a case.-&gt;Intro-Branch-2]]</tw-passagedata><tw-passagedata pid="5" name="Intro-Branch-1" tags="" position="721,696" size="100,100">(text-colour:#9B4900 )[Prince: Is that so? Then why are you here?]
 
 
-[[I was hired as a detective to investigate the king’s unfortunate death.-&gt;Intro-Branch-1-1]]
+[[I was hired as a detective to investigate something.-&gt;Intro-Branch-1-1]]
 
 
-[[That is none of your business.-&gt;Intro-Branch-1-1]]</tw-passagedata><tw-passagedata pid="6" name="Intro-Branch-3" tags="" position="721,924" size="100,100">(text-colour:orange)[Prince: How dare you speak to me in this way.]
-[[Whatever, tell me what’s going on?-&gt;Intro-Branch-3-3]]
-[[You’re right I apologize your highness-&gt;Intro-Branch-3-3]]
+[[That is none of your business.-&gt;Intro-Branch-1-1]]</tw-passagedata><tw-passagedata pid="6" name="Intro-Branch-3" tags="" position="721,924" size="100,100">(text-colour:#9B4900 )[Prince: How dare you speak to me in this way?]
+[[Whatever, can you tell me what’s going on?-&gt;Intro-Branch-3-3]]
+[[You’re right, I apologize your highness.-&gt;Intro-Branch-3-3]]
 
-</tw-passagedata><tw-passagedata pid="7" name="Intro-Branch-2" tags="" position="721,808" size="100,100">(text-colour:orange)[Prince: You have to be if you want to get anything done. At any rate, the castle is not accepting visitors at this time so you ought to take your leave.]
-[[Im no visitor, im here for a job.-&gt;Intro-Branch-2-2]]
-[[So i take it that it wasnt you who sent for me?-&gt;Intro-Branch-2-2]]</tw-passagedata><tw-passagedata pid="8" name="Intro-Branch-2-2" tags="" position="834,810" size="100,100">(text-colour:orange)[Prince: I know not of whatever job you speak of, and frankly I dont have the time right now to inquire more about it. //Exits//]
-[[Walk to guard-&gt;Guard-1]]</tw-passagedata><tw-passagedata pid="9" name="Intro-Branch-1-1" tags="" position="836,695" size="100,100">(text-colour:orange)[Prince: I don’t have time for this foolishness. [Exits]]
-[[Walk to guard-&gt;Guard-1]]</tw-passagedata><tw-passagedata pid="10" name="Intro-Branch-3-3" tags="" position="837,926" size="100,100">(text-colour:orange)[Prince: I will not take this insolence //Exits//]
-[[Walk to guard-&gt;Guard-1]]</tw-passagedata><tw-passagedata pid="11" name="Guard-1" tags="" position="985,812" size="100,100">(text-colour:grey)[&#39;&#39;Guard&#39;&#39;: Detective! I am Archibald, the Royal Guard. Welcome, as you may have deducted I invited you here to look into the murder of King Oddleifus. For the past hours I have been attempting to deliberate who could have been behind this terrible crime, but alas there appears to be numerous suspects.]
-(text-colour:Blue)[&#39;&#39;Detective&#39;&#39;: Do tell.]
-(text-colour:grey)[&#39;&#39;Guard&#39;&#39;: Detective! I am Archibald, the Royal Guard. Welcome, as you may have deducted I invited you here to look into the murder of King Oddleifus. For the past hours I have been attempting to deliberate who could have been behind this terrible crime, but alas there appears to be numerous suspects.]
-(text-colour:grey)[&#39;&#39;Guard&#39;&#39;: The first being &#39;&#39;Ē, The Bard&#39;&#39;. Odd name, and an odd fellow too. He is the individual whom I suspect the most. I have brought him down to the dungeon, where he stands chained.
-&#39;&#39;Guard&#39;&#39;: The next is the &#39;&#39;Wizard, Lothar&#39;&#39;. He was treating the King’s illness with his magic and they would often meet privately in the King’s chambers for long periods of time.
-&#39;&#39;Guard&#39;&#39;: Then there is the &#39;&#39;Royal maid, Matilda&#39;&#39;. She use to be a part of the King’s royal knights until an incident happened where she lost her right leg  and the king dismissed her. Amongst the guards and servants there is a rumor of her peculiar diet being vampiric.
-&#39;&#39;Guard&#39;&#39;: The fourth suspect is the &#39;&#39;Queen, Regina&#39;&#39;. The King and Queen have been at odds for the past months. However I doubt the Queen would have resorted to murder to settle their conflicts.
-&#39;&#39;Guard&#39;&#39;: The one you meet earlier is the &#39;&#39;Prince, Augustus&#39;&#39;. Not to speak ill of his highness but his personality makes him a difficult person to be around. The king recently denied him from holding a massive and costly banquet for his birthday and the prince was very upset. His highness usually takes it out on the servants and guards when things don’t go his way.
+</tw-passagedata><tw-passagedata pid="7" name="Intro-Branch-2" tags="" position="721,808" size="100,100">(text-colour:#9B4900 )[Prince: You have to be if you want to get anything done. At any rate, the castle is not accepting visitors at this time so you ought to take your leave.]
+[[I&#39;m no visitor, I&#39;m here for a job.-&gt;Intro-Branch-2-2]]
+[[So I take it that it wasn&#39;t you who sent for me?-&gt;Intro-Branch-2-2]]</tw-passagedata><tw-passagedata pid="8" name="Intro-Branch-2-2" tags="" position="834,810" size="100,100">(text-colour:#9B4900 )[Prince: I know not of whatever job you speak of, and frankly I dont have the time right now to inquire more about it. ]
+ (text-colour:#1B4381)[ //The prince brushes past your shoulder as he exits.//]
+[[Walk to guard-&gt;Guard-1]]</tw-passagedata><tw-passagedata pid="9" name="Intro-Branch-1-1" tags="" position="836,695" size="100,100">(text-colour:#9B4900 )[Prince:How dare you speak to me in this manner? Blah, I don’t have time for this foolishness. 
+ (text-colour:#1B4381)[ //The prince brushes past your shoulder as he exits.//]
+[[Walk to guard-&gt;Guard-1]]</tw-passagedata><tw-passagedata pid="10" name="Intro-Branch-3-3" tags="" position="837,926" size="100,100">(text-colour:#9B4900 )[Prince: I will not take this insolence, but I don’t have the time to put you in your place right now either.]
+ (text-colour:#1B4381)[ //The prince brushes past your shoulder as he exits.//]
+[[Walk to guard-&gt;Guard-1]]</tw-passagedata><tw-passagedata pid="11" name="Guard-1" tags="" position="985,812" size="100,100">(text-colour:#4B4F50 )[&#39;&#39;Guard&#39;&#39;: Detective! I am Archibald, the Royal Guard. Welcome, as you may have deduced, I invited you here to look into the murder of King Oddleifus. For the past hours I have been attempting to solve who could have been behind this terrible crime, but alas there appears to be numerous suspects.]
+(text-colour:#095671)[&#39;&#39;Detective&#39;&#39;: Do tell.]
+(text-colour:#4B4F50 )[&#39;&#39;Guard&#39;&#39;: The first being &#39;&#39;The Bard, Ē&#39;&#39;. Odd name, and an odd fellow too. He is the individual whom I suspect the most. I have brought him down to the dungeon, where he stands chained.
+&#39;&#39;Guard&#39;&#39;: Next is the &#39;&#39;Wizard, Lothar&#39;&#39;. He was treating the King’s illness with his magic, and they would often meet privately in the King’s chambers for long periods of time.
+&#39;&#39;Guard&#39;&#39;: Then there is the &#39;&#39;Royal Maid, Matilda&#39;&#39;. She used to be a part of the King’s Royal Knights, until an incident happened where she lost her right leg, and thus the king dismissed her. Amongst the guards and servants there is a rumor of her peculiar diet being vampiric. Quite frankly she terrifies me.
+&#39;&#39;Guard&#39;&#39;: The fourth suspect is the &#39;&#39;Queen, Regina&#39;&#39;. The King and Queen have been at odds for the past months. However, I doubt the Queen would have resorted to murder to settle their conflicts.
+&#39;&#39;Guard&#39;&#39;: The one you meet earlier is the &#39;&#39;Prince, Augustus&#39;&#39;. Not to speak ill of his highness, but his personality makes him a difficult person to be around. The King recently denied him from holding a massive and costly banquet for his birthday, and the Prince was very upset. His highness usually takes it out on the servants and guards when things don’t go his way.
 &#39;&#39;Guard&#39;&#39;: &#39;&#39;The Blacksmith, Björn&#39;&#39; is the final suspect. Years ago, the Blacksmith had lost his son at the King’s order. Björn’s son was executed due to their refusal to follow the King’s orders of setting an enemy village ablaze, they argued that it provided little tactical advantage – however the king thought otherwise.
-&#39;&#39;Guard&#39;&#39;: I shall give you the master key to the castle, this will allow you into every room in the main halls of the castle. //Gives Key//]
-[[Thank you.-&gt;Guard-2]]</tw-passagedata><tw-passagedata pid="12" name="Guard-2" tags="" position="1112,818" size="100,100">(text-colour:grey)[Guard: I shall now show you where the King took his final rest upon his most regal throne. walks into throne room and Detective follows
-Guard: I will take my leave and let you work. If you need me, I shall be in the Royal Garden //Exits//
-]
+&#39;&#39;Guard&#39;&#39;: I shall give you the master key to the castle, this will allow you into every room in the main halls of the castle. You are free to visit anywhere you need to during your investigation.]
+ (text-colour:#1B4381)[ //The Guard hands you the key.//]
+[[Thank you.-&gt;Guard-2]]</tw-passagedata><tw-passagedata pid="12" name="Guard-2" tags="" position="1112,818" size="100,100">(text-colour:#4B4F50 )[&#39;&#39;Guard&#39;&#39;: I shall now show you where the King took his final rest upon his most regal throne. 
+ (text-colour:#1B4381)[ //You follow the guard out of the Main Hall, and into the throne room.//]
+&#39;&#39;Guard&#39;&#39;: I will take my leave, and let you work. If you need me, I shall be in the Royal Garden.]
+ (text-colour:#1B4381)[ //The Guard exits.//]
+(text-colour:cyan)[&#39;&#39;Once you have gathered at least two pieces of evidence you may make a decision on who the killer truly is. However, there are numerous suspects to talk to, and more than two pieces of evidence throughout the entire castle. After you have gathered two pieces of evidence you can return to the King&#39;s Court to make your final decision.&#39;&#39;]
 [[Enter King&#39;s Court-&gt;King&#39;s Court]]
-</tw-passagedata><tw-passagedata pid="13" name="King&#39;s Court" tags="" position="1257,825" size="100,100">(text-colour:purple)+(bg:black)+(align:&quot;&lt;==&gt;&quot;)[&#39;&#39;The King&#39;s Court&#39;&#39;]
-(bg:purple)+(align:&quot;&lt;==&gt;&quot;)+(box:&quot;=XX=&quot;)[In this room you can see the King, dead, slumped over upon his throne. There is a row of stone columns leading to the main door, with a red carpet with a small metal object that appears to have fallen onto the carpet. A small portrait on the wall depicts the King, Queen and the Prince. Above the throne, there is a massive portrait of the King.]
+</tw-passagedata><tw-passagedata pid="13" name="King&#39;s Court" tags="" position="1257,826" size="100,100">(text-color:#4F3097)[&#39;&#39;The King&#39;s Court&#39;&#39;]
+(text-color:#4F3097)[In this room you can see the King, dead, slumped over upon his throne. There is a row of stone columns leading to the main door. Leading to the throne is a red velvet carpet, and upon it lies a small metal object that appears to have fallen on top of it. A small portrait on the wall depicts the King, Queen and the Prince. Above the throne, there is a massive portrait of the King.]
 [[Inspect the portraits-&gt;Portraits]]
 [[Inspect the dead body-&gt;Dead Body]]
 (if: $inventory does not contain &quot;pommel&quot;)[[[Inspect the small metal object-&gt;Pommel]]]
-[[Enter the Left Hallway-&gt;Right Hallway]]
-[[Enter the Right Hallway-&gt;Left Hallway]]
-[[Go to the Forge-&gt;Forge]]</tw-passagedata><tw-passagedata pid="14" name="Portraits" tags="" position="1563,691" size="100,100">You walk towards the portraits. In the family portrait, the King and Prince are smiling while looking forwards. The queen however, is looking distantly to the side. The portrait of the King is incredibly regal. His expression is stoic, and almost seems cold
-[[Continue-&gt;King&#39;s Court]]</tw-passagedata><tw-passagedata pid="15" name="Dead Body" tags="" position="1561,815" size="100,100">You approach the body and notice multiple stab wounds covering the abdomen of the king. The deepest wound is a slash to the king’s throat. There is a large pool of the blood surrounding the throne. 
-[[Continue-&gt;King&#39;s Court]]</tw-passagedata><tw-passagedata pid="16" name="Pommel" tags="" position="1558,939" size="100,100">You walk towards the object and notice a small damascus metal pommel with a small engraving on the bottom. The Blacksmith may have information on this.
+[[Enter the Left Hallway-&gt;Left Hallway]]
+[[Enter the Right Hallway-&gt;Right Hallway]]
+[[Go to the Forge-&gt;Forge]]
+(if: ($inventory&#39;s length &gt;= 2))[(text-colour:cyan)[&#39;&#39;You may now make a claim on who the murderer is.&#39;&#39;]
+[[Make final decision-&gt;End-1]]]r</tw-passagedata><tw-passagedata pid="14" name="Portraits" tags="" position="1563,691" size="100,100">(text-colour:#1B4381)[//You walk towards the portraits. In the family portrait, the King and Prince are smiling while looking forwards. The queen however, is looking distantly to the side. The portrait of the King is incredibly regal. His expression is stoic, and almost seems cold.//]
+[[Continue-&gt;King&#39;s Court]]</tw-passagedata><tw-passagedata pid="15" name="Dead Body" tags="" position="1561,815" size="100,100">(text-colour:#1B4381)[//You approach the body, and notice multiple stab wounds covering the abdomen of the king. The deepest wound is a slash to the king’s throat. There is a large pool of glistening blood surrounding the throne.//] 
+[[Continue-&gt;King&#39;s Court]]</tw-passagedata><tw-passagedata pid="16" name="Pommel" tags="" position="1558,939" size="100,100">(text-colour:#1B4381)[//You walk towards the object and notice a small damascus metal pommel with a small engraving on the bottom. Perhaps the Blacksmith may have information on this.//]
 [[Pickup Pommel]]
 [[Leave Pommel-&gt;King&#39;s Court]]
-</tw-passagedata><tw-passagedata pid="17" name="Right Hallway" tags="" position="1366,1057" size="100,100">(text-colour:purple)+(bg:black)+(align:&quot;=&gt;&lt;=&quot;)[&#39;&#39;IN THE RIGHT HALLWAY&#39;&#39;]
-(bg:purple)+(align:&quot;&lt;==&gt;&quot;)+(box:&quot;=XX=&quot;)[In the Right Hallway, there is a collection of fine swords and shields lining the walls. As you walk down the hall you see three doors, the royal chambers, the maid chambers and a door leading outside to the garden.]
+</tw-passagedata><tw-passagedata pid="17" name="Right Hallway" tags="" position="1366,1057" size="100,100">(text-color:#4F3097)[&#39;&#39;IN THE RIGHT HALLWAY&#39;&#39;]
+(text-color:#4F3097)[In the Right Hallway, there is a collection of fine swords and shields lining the walls. As you walk down the hall you see three doors, one to the royal chambers, one to the maid chambers, and a one that leads to the garden.]
 [[Return to King&#39;s Court-&gt;King&#39;s Court]]
 [[Enter Royal Chambers-&gt;Royal Chambers]]
-[[Enter The Garden-&gt;The Garden]]</tw-passagedata><tw-passagedata pid="18" name="Left Hallway" tags="" position="1341,532" size="100,100">(text-colour:purple)+(bg:black)+(align:&quot;=&gt;&lt;=&quot;)[&#39;&#39;IN THE LEFT HALLWAY&#39;&#39;]
-(bg:purple)+(align:&quot;&lt;==&gt;&quot;)+(box:&quot;=XX=&quot;)[In the Left Hallway, there is a collection of fine art pieces. There are large portraits of the royal lineage, there are ominous statues of knights looking down upon you as you walk down the red and yellow carpet. As you stroll down the hall, you see two four doors, one to the Wizard’s tower, one to the Kitchen, one to Dungeon and one outside into the garden. ]
+[[Enter The Garden-&gt;The Garden]]</tw-passagedata><tw-passagedata pid="18" name="Left Hallway" tags="" position="1341,532" size="100,100">(text-color:#4F3097)[&#39;&#39;IN THE LEFT HALLWAY&#39;&#39;]
+(text-color:#4F3097)[In the Left Hallway, there is a collection of fine art pieces. There are large portraits of the royal lineage, and ominous statues of knights looking down upon you as you walk down the red and yellow carpet. As you stroll down the hall, you see four doors, one to the Wizard’s tower, one to the Kitchen, one to Dungeon, and one that leads to the garden. ]
 [[Return to King&#39;s Court-&gt;King&#39;s Court]]
 [[Enter the Kitchen-&gt;Kitchen]]
 [[Walk to the dungeon door-&gt;Dungeon Door]]
 [[Walk to wizard tower door-&gt;wizard tower door]]
-[[Enter the Garden-&gt;The Garden]] </tw-passagedata><tw-passagedata pid="19" name="Forge" tags="" position="877,1121" size="100,100">(text-colour:purple)+(bg:black)+(align:&quot;=&gt;&lt;=&quot;)[&#39;&#39;AT THE FORGE&#39;&#39;]
-(bg:purple)+(align:&quot;&lt;==&gt;&quot;)+(box:&quot;=XX=&quot;)[You arrive at the forge outside the main castle gates, you hear the sounds of metal being hammered. You enter the stone building. There are metal chains hanging from the ceiling, with various pieces of swords, axes and maces lying around. Ahead of you is a large fireplace, with large flames piercing through the coal. There is a doorway to what appears to be the Blacksmith’s bedroom.]
-(text-colour:Blue)[&#39;&#39;Detective&#39;&#39;: //You Enter the Forge//]
+[[Enter the Garden-&gt;The Garden]] </tw-passagedata><tw-passagedata pid="19" name="Forge" tags="" position="877,1121" size="100,100">(text-color:#4F3097)[&#39;&#39;AT THE FORGE&#39;&#39;]
+(text-color:#4F3097)[You arrive at the forge outside the main castle gates, and you can hear the sounds of metal being hammered. You enter the rugged stone building. There are metal chains hanging from the ceiling, with various pieces of swords, axes and maces lying around. Ahead of you is a large fireplace, with large flames piercing through the coal. There is a doorway to what appears to be the Blacksmith’s bedroom.]
+(text-colour:#1B4381)[//You enter the Forge//]
 [[//… say nothing//-&gt;Forge-1]]
 [[//Hello anyone there?//-&gt;Forge-1]]
-[[//Return to King&#39;s Court//-&gt;King&#39;s Court]]</tw-passagedata><tw-passagedata pid="20" name="Forge-1" tags="" position="875,1240" size="100,100">(text-colour:red)[&#39;&#39;Björn&#39;&#39;: How may I help you?]
-(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: I’m here to investigate the murder of King Oddleifus would you mind if I ask a few questions?]
+[[//Return to King&#39;s Court//-&gt;King&#39;s Court]]</tw-passagedata><tw-passagedata pid="20" name="Forge-1" tags="" position="882,1243" size="100,100">(text-colour:#AC0E0E)[&#39;&#39;Björn&#39;&#39;: How may I help you?]
+(text-colour:#095671)[&#39;&#39;Detective&#39;&#39;: I’m here to investigate the murder of King Oddleifus, would you mind if I ask a few questions?]
+(text-colour:#AC0E0E)[&#39;&#39;Björn&#39;&#39;: Yes of course, whatever you need.]
 [[Return to Forge Entrance-&gt;Forge]] 
 [[Where were you at the time of the murder?-&gt;Forge-2-1]]
 [[Did you harbor any ill feelings toward the King?-&gt;Forge-2-2]]
-[[Did you murder the King?-&gt;Forge-2-3]]</tw-passagedata><tw-passagedata pid="21" name="Forge-2-1" tags="" position="687,1253" size="100,100">(text-colour:red)[&#39;&#39;Björn&#39;&#39;: I was working late at night when I heard shouts and loud noises in the castle. That was yesterday when the King died. ]
-(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: What were you working on and can anyone verify your whereabouts?]
-(text-colour:red)[&#39;&#39;Björn&#39;&#39;: I was working on the Prince’s new sword as his old was chipped. The Prince can verify my whereabouts as he came to pick up his sword later that same night.] 
+[[Did you murder the King?-&gt;Forge-2-3]]
+(if:$inventory contains &quot;knowledge: wizard&quot;)[[[I have returned from the wizard and new information has come to light, could you tell me a bit about your son and what lead to his death?-&gt;Bjorn After Wizard]]]</tw-passagedata><tw-passagedata pid="21" name="Forge-2-1" tags="" position="687,1253" size="100,100">(text-colour:#AC0E0E)[&#39;&#39;Björn&#39;&#39;: I was working late at night when I heard shouts and loud noises in the castle. That was yesterday when the King was killed. ]
+(text-colour:#095671 )[&#39;&#39;Detective&#39;&#39;: What were you working on? Can anyone verify your whereabouts?]
+(text-colour:#AC0E0E)[&#39;&#39;Björn&#39;&#39;: I was working on the Prince’s new sword as his old one was chipped. The Prince can verify my whereabouts as he came to pick up his sword later that same night.] 
 [[Noted.-&gt;Forge-1]]
-[[Have you seen this pommel? //Take out Pommel from Throne Room//-&gt;Forge-2-1-1]]</tw-passagedata><tw-passagedata pid="22" name="Forge-2-2" tags="" position="917,1372" size="100,100">(text-colour:red)[&#39;&#39;Björn&#39;&#39;: The king murdered my son, I of course have ill feelings towards him. But I would never murder.]
-[[Alright.-&gt;Forge-1]]</tw-passagedata><tw-passagedata pid="23" name="Forge-2-3" tags="" position="1070,1366" size="100,100">(text-colour:red)[&#39;&#39;Björn&#39;&#39;: The king murdered my son, I of course have ill feelings towards him. But I would never murder.]
-[[Alright.-&gt;Forge-1]]</tw-passagedata><tw-passagedata pid="24" name="Forge-2-1-1" tags="" position="758,1413" size="100,100">(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: //brings out the pommel// Does this look familiar?]
-(text-colour:red)[&#39;&#39;Björn&#39;&#39;: Yes that was the pommel to the Prince’s old sword.]
-(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: Where is the sword now?]
-(text-colour:red)[Björn: It should still be here in the forge. //Looks around for the sword// …Hmmm it seems to be gone now maybe the Prince decided to take it with him when he came for the new sword.]
-(text-colour:red)[&#39;&#39;Detective&#39;&#39;: Who has access to the Forge other than you?]
-(text-colour:red)[&#39;&#39;Björn&#39;&#39;: Everyone, the Forge is usually left unlocked.]
+[[Have you seen this pommel? //Take out Pommel from Throne Room//-&gt;Forge-2-1-1]]</tw-passagedata><tw-passagedata pid="22" name="Forge-2-2" tags="" position="938,1395" size="100,100">(text-colour:#AC0E0E)[&#39;&#39;Björn&#39;&#39;: He was a bastard. Took what he wanted, when he wanted. Just because he&#39;s dead doesn&#39;t mean I&#39;ll pretend like he was any better of a person. History doesn&#39;t have place for rulers like him.]
+[[I see, thank you.-&gt;Forge-1]]</tw-passagedata><tw-passagedata pid="23" name="Forge-2-3" tags="" position="1070,1366" size="100,100">(text-colour:#AC0E0E)[&#39;&#39;Björn&#39;&#39;: The King murdered my son, so of I course have ill feelings towards him. But I would never murder. I would never stoop so low as he did that day.]
+[[I understand, thank you.-&gt;Forge-1]]</tw-passagedata><tw-passagedata pid="24" name="Forge-2-1-1" tags="" position="754,1417" size="100,100">(text-colour:navy)[//You take out the pommel.//]
+(text-colour:#095671 )[&#39;&#39;Detective&#39;&#39;: Does this look familiar?]
+(text-colour:#AC0E0E)[&#39;&#39;Björn&#39;&#39;: Yes, that was the pommel to the Prince’s old sword.]
+(text-colour:#095671 )[&#39;&#39;Detective&#39;&#39;: Where is the sword now?]
+(text-colour:#AC0E0E)[Björn: It should still be here in the forge. 
+(text-colour:navy)[//Björn searches the various chests in the forge, and returns.//]
+(text-colour:#AC0E0E)[Björn:…Hmmm it seems to be gone now. Perhaps the Prince decided to take it with him when he came for the new sword.]
+(text-colour:#095671)[&#39;&#39;Detective&#39;&#39;: Who has access to the Forge other than you?]
+(text-colour:#AC0E0E)[&#39;&#39;Björn&#39;&#39;: Everyone, the Forge is usually left unlocked.]
 [[Thank you for the information.-&gt;Forge-1]]
 [[No further questions.-&gt;Forge]]
-[[Ok Goodbye.-&gt;Forge]]</tw-passagedata><tw-passagedata pid="25" name="Prince&#39;s Royal Chambers" tags="" position="1367,1332" size="100,100">(text-colour:Blue)[&#39;&#39;Detective&#39;&#39;: //Enters the Prince&#39;s Royal Chambers//]
+[[Okay, Goodbye.-&gt;Forge]]</tw-passagedata><tw-passagedata pid="25" name="Prince&#39;s Royal Chambers" tags="" position="1367,1332" size="100,100">(text-colour:Blue)[&#39;&#39;Detective&#39;&#39;: //Enters the Prince&#39;s Royal Chambers//]
 (text-colour:Orange)[&#39;&#39;Prince&#39;&#39;: Hello, Detective]
 (text-colour:Blue)[&#39;&#39;Detective&#39;&#39;: Good Afternoon Prince Augustus, may I inquire a few things about the untimely murder of your father]
 (text-colour:Orange)[&#39;&#39;Prince&#39;&#39;: Gladly, I have nothing to hide.]
@@ -149,8 +201,8 @@ Guard: I will take my leave and let you work. If you need me, I shall be in the 
 [[I&#39;ll look into it-&gt;Prince&#39;s Royal Chambers]] </tw-passagedata><tw-passagedata pid="27" name="Royal Chambers-2" tags="" position="1333,1590" size="100,100">(text-colour:Orange)[&#39;&#39;Prince&#39;&#39;: It is no secret that I have always been at odds with my father. He refused to spend any of his many riches on my ideas.]
 [[Seems like quite the tumultuous relationship.-&gt;Prince&#39;s Royal Chambers]] </tw-passagedata><tw-passagedata pid="28" name="Royal Chambers-3" tags="" position="1545,1427" size="100,100">(text-colour:Orange)[&#39;&#39;Prince&#39;&#39;: //Sweats// That is the pommel to my blade. My sword has been in the forge for quite a few days for repair, how odd that a piece of it showed up at the crime scene!]
 [[Odd indeed. Do you have any explanation?-&gt;Royal Chambers-3-1]] </tw-passagedata><tw-passagedata pid="29" name="Royal Chambers-3-1" tags="" position="1470,1582" size="100,100">(text-colour:Orange)[&#39;&#39;Prince&#39;&#39;: Are you &#39;&#39;accusing me&#39;&#39; of something?]
-[[Not yet.-&gt;Prince&#39;s Royal Chambers]]</tw-passagedata><tw-passagedata pid="30" name="Kitchen" tags="" position="983,354" size="100,100">(text-colour:purple)+(bg:black)+(align:&quot;=&gt;&lt;=&quot;)[&#39;&#39;The Royal Kitchen&#39;&#39;]
-(bg:purple)+(align:&quot;&lt;==&gt;&quot;)+(box:&quot;=XX=&quot;)[For a Royal Kitchen, it seems rather worn down, with bottles lying on the floor and rotten food around all the tables. The place hardly fits the name &quot;Royal&quot;.]
+[[Not yet.-&gt;Prince&#39;s Royal Chambers]]</tw-passagedata><tw-passagedata pid="30" name="Kitchen" tags="" position="983,354" size="100,100">(text-color:#4F3097)[&#39;&#39;The Royal Kitchen&#39;&#39;]
+(text-color:#4F3097)[For a Royal Kitchen, it seems rather worn down, with bottles lying on the floor and rotten food around all the tables. The place hardly fits the name &quot;Royal&quot;.]
 [[Inspect Rotten Tomatoes-&gt;Rotten Tomatoes]]
 (if: $inventory does not contain &quot;bottle of alcohol&quot;)[[[Inspect An Opened Bottle of Alcohol-&gt;Alcohol]]]
 [[Exit to Left Hallway-&gt;Left Hallway]]</tw-passagedata><tw-passagedata pid="31" name="Rotten Tomatoes" tags="" position="843,217" size="100,100">(text-colour:Blue)[&#39;&#39;Detective&#39;&#39;: //You inspect Rotten Tomatoes, you are unsure of how this is relevant to the case...// ]
@@ -160,14 +212,14 @@ Guard: I will take my leave and let you work. If you need me, I shall be in the 
 [[Leave Bottle-&gt;Kitchen]] 
 </tw-passagedata><tw-passagedata pid="33" name="Startup" tags="startup" position="274,508" size="100,100">(set: $inventory to (a:))
 </tw-passagedata><tw-passagedata pid="34" name="Pickup Pommel" tags="" position="1687,947" size="100,100">(set: $inventory to $inventory + (a: &quot;pommel&quot;))
-(go-to: &quot;King&#39;s Court&quot;)</tw-passagedata><tw-passagedata pid="35" name="Pickup Bottle" tags="" position="1113,95" size="100,100">(set: $inventory to $inventory + (a: &quot;bottle of alcohol&quot;))
+(go-to: &quot;King&#39;s Court&quot;)</tw-passagedata><tw-passagedata pid="35" name="Pickup Bottle" tags="" position="1113,94" size="100,100">(set: $inventory to $inventory + (a: &quot;bottle of alcohol&quot;))
 (go-to: &quot;Kitchen&quot;)</tw-passagedata><tw-passagedata pid="36" name="The Garden" tags="" position="1975,528" size="100,100">
-(text-colour:purple)+(bg:black)+(align:&quot;=&gt;&lt;=&quot;)[&#39;&#39;—IN THE GARDEN—&#39;&#39;]
-(bg:purple)+(align:&quot;&lt;==&gt;&quot;)+(box:&quot;=XX=&quot;)[
-You walk outside into the courtyard garden, there is a collection of exotic plants and flowers that are not native to the region. There are paths that walk around the courtyard.]
+(text-color:#4F3097)[&#39;&#39;—IN THE GARDEN—&#39;&#39;]
+(text-color:#4F3097)[
+You walk outside into the courtyard garden. There is an extravagent collection of exotic plants and flowers that are not native to the region. There are paths that walk around the courtyard.]
 [[Talk to Guard-&gt;Garden Guard]]
 [[Look arond the garden-&gt;Investigate Garden]]
-[[RETURN TO KING&#39;S COURT-&gt;King&#39;s Court]] </tw-passagedata><tw-passagedata pid="37" name="Garden Guard" tags="" position="1965,400" size="100,100">(text-colour:Blue)[&#39;&#39;Detective&#39;&#39;: //You notice the guard and approach him.//]
+[[Return to King&#39;s Court-&gt;King&#39;s Court]] </tw-passagedata><tw-passagedata pid="37" name="Garden Guard" tags="" position="1965,400" size="100,100">(text-colour:Blue)[&#39;&#39;Detective&#39;&#39;: //You notice the guard and approach him.//]
 (text-colour:Gray)[&#39;&#39;Guard&#39;&#39;: Detective you’re back. Anything I can do for you?]
 (text-colour:Blue)[&#39;&#39;Detective&#39;&#39;: Some new information came to light so I have some questions for you.]
 (text-colour:Gray)[&#39;&#39;Guard&#39;&#39;: I will answer to the best of my ability]
@@ -198,8 +250,9 @@ You walk outside into the courtyard garden, there is a collection of exotic plan
 [[A piece of cloth-&gt;Cloth]]
 [[Plant Shears-&gt;Plant shears]]
 [[A Rose bush-&gt;Rose bush]]
-[[Return to Garden Entrance-&gt;The Garden]]</tw-passagedata><tw-passagedata pid="42" name="Cloth" tags="" position="2360,761" size="100,100">(text-colour:blue)[&#39;&#39;Detective&#39;&#39;:// You inspect the piece of cloth that is tossed over the branch of an old oak tree. The cloth is a rag that has a deep red stain on it. The stain is the King’s blood. You deduce that the murder must have wipe the bloody blade on the rag and left behind the evidence.]
-[[Noted-&gt;Investigate Garden]] </tw-passagedata><tw-passagedata pid="43" name="Plant shears" tags="" position="2355,644" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="44" name="Rose bush" tags="" position="2339,516" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="45" name="Dungeon Key" tags="" position="1823,155" size="100,100">(set: $inventory to $inventory + (a: &quot;dungeon key&quot;))
+[[Return to Garden Entrance-&gt;The Garden]]</tw-passagedata><tw-passagedata pid="42" name="Cloth" tags="" position="2360,761" size="100,100">(text-colour:blue)[&#39;&#39;Detective&#39;&#39;:// You inspect the piece of cloth that is tossed over the branch of an old oak tree. The cloth is a rag that has a deep red stain on it. The stain is the King’s blood. You deduce that the murder must have wipe the bloody blade on the rag and left behind the evidence.//]
+[[Pickup Cloth-&gt;Cloth-Pickup]]
+[[Leave Cloth-&gt;Investigate Garden]] </tw-passagedata><tw-passagedata pid="43" name="Plant shears" tags="" position="2355,644" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="44" name="Rose bush" tags="" position="2339,516" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="45" name="Dungeon Key" tags="" position="1823,155" size="100,100">(set: $inventory to $inventory + (a: &quot;dungeon key&quot;))
 (go-to: &quot;Garden Guard&quot;)</tw-passagedata><tw-passagedata pid="46" name="Dungeon Door" tags="" position="1481,405" size="100,100">(if: $inventory does not contain &quot;dungeon key&quot;)[(text-colour:Blue)[&#39;&#39;Detective&#39;&#39;: //You inspect the large intricate dungeon door, you&#39;re not getting through unless you have a key//]]
 (if: $inventory contains &quot;dungeon key&quot;)[(text-colour:Blue)[&#39;&#39;Detective&#39;&#39;: //You inspect the large intricate dungeon door, you have a key to enter//]]
 (if: $inventory contains &quot;dungeon key&quot;)[[[Enter the Dungeon-&gt;Dungeon]]]
@@ -213,12 +266,12 @@ You walk outside into the courtyard garden, there is a collection of exotic plan
 (text-colour:yellow)[&#39;&#39;Bard&#39;&#39;: That is of no importance however what you may find interesting is that this eloquent Bard holds the very secrets that may help you solve his majesty’s demise.]
 [[Tell me-&gt;Tell me Bard]]
 [[If you have key information I’m interested in what you have to say-&gt;key info]]
-[[Enough of your silly games give me the information-&gt;No more games]]</tw-passagedata><tw-passagedata pid="49" name="Tell me Bard" tags="" position="1347,28" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="50" name="key info" tags="" position="1459,34" size="100,100">(text-colour:yellow)[&#39;&#39;Bard&#39;&#39;: Here goes the tale of the tragic royal family. The king who had everything he had desired in life was filled to the brim with tyranny and could not control his insatiable greed. The queen forlorn as she was would stare out the window but what was she looking at? Bubbles, amulets, and magic cause one’s body to act on autopilot to exact revenge. A puppet always has a puppeteer.]
+[[Enough of your silly games give me the information-&gt;No more games]]</tw-passagedata><tw-passagedata pid="49" name="Tell me Bard" tags="" position="1347,28" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="50" name="key info" tags="" position="1463,26" size="100,100">(text-colour:yellow)[&#39;&#39;Bard&#39;&#39;: Here goes the tale of the tragic royal family. The king who had everything he had desired in life was filled to the brim with tyranny and could not control his insatiable greed. The queen forlorn as she was would stare out the window but what was she looking at? Bubbles, amulets, and magic cause one’s body to act on autopilot to exact revenge. A puppet always has a puppeteer.]
 (text-colour:blue)[&#39;&#39;Detective&#39;&#39;: What I thought you were going to give me information not a riddle.]
 (text-colour:yellow)[&#39;&#39;Bard&#39;&#39;: I have given you all you may need the rest is up to you Detective.]
 (text-colour:blue)[&#39;&#39;Detective&#39;&#39;:// In a wordless daze you watch as the Bard turns around and heads to his bed while humming an unfamiliar tune. This riddle gives you the desire to question the members of the royal family.]
 (set: $inventory to $inventory + (a: &quot;knowledge:bard&quot;))
-[[Alright...-&gt;#312]]</tw-passagedata><tw-passagedata pid="51" name="No more games" tags="" position="1575,30" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="52" name="Royal Chambers" tags="" position="1369,1187" size="100,100">(text-colour:Blue)[&#39;&#39;Detective&#39;&#39;: //You Enter the Royal Chambers, as you walk down a corridor you see three doors. One to the Prince&#39;s Chamber, one to the Maid&#39;s Chamber and one to the Queen and King&#39;s Chamber//]
+[[Alright...-&gt;#312]]</tw-passagedata><tw-passagedata pid="51" name="No more games" tags="" position="1575,30" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="52" name="Royal Chambers" tags="" position="1369,1187" size="100,100">(text-colour:navy)[ //You Enter the Royal Chambers, as you walk down a corridor you see three doors. One to the Prince&#39;s Chamber, one to the Maid&#39;s Chamber and one to the Queen and King&#39;s Chamber//]
 [[Return to Right Hallway-&gt;Right Hallway]] 
 [[Walk into Prince&#39;s Chambers-&gt;Prince&#39;s Royal Chambers]] 
 [[Walk into Maid&#39;s Chambers-&gt;Maid&#39;s Chambers]]
@@ -229,7 +282,8 @@ You walk outside into the courtyard garden, there is a collection of exotic plan
 (text-colour:blue)[&#39;&#39;Detective&#39;&#39;:// As you come into the room you notice that Matilda is missing her right leg which would explain the shuffling noises earlier. You look around the room and see a few blood bags stuffed in the corner of the room behind a stool as if to hide them. What do you say next?//]
 [[Why are there blood bags?-&gt;why blood bags]]
 [[Tell me about the gossip surrounding the royal family-&gt;Gossip?]]
-[[What was it like working for the queen?-&gt;Working for Queen?]]</tw-passagedata><tw-passagedata pid="54" name="Queen&#39;s Chambers" tags="" position="1596,1093" size="100,100">(text-colour:blue)[&#39;&#39;Detective&#39;&#39;:// You turn towards the open door which you can see the queen sitting in.//]
+[[What was it like working for the queen?-&gt;Working for Queen?]]
+[[That&#39;s all for now-&gt;Royal Chambers]] </tw-passagedata><tw-passagedata pid="54" name="Queen&#39;s Chambers" tags="" position="1596,1093" size="100,100">(text-colour:blue)[&#39;&#39;Detective&#39;&#39;:// You turn towards the open door which you can see the queen sitting in.//]
 
 (text-colour:blue)[&#39;&#39;Detective&#39;&#39;:// What would you like to do?//]
 [[May I inspect the room?-&gt;Inspect Queen Room]]
@@ -288,22 +342,99 @@ You walk outside into the courtyard garden, there is a collection of exotic plan
 (text-colour:blue)[&#39;&#39;Detective&#39;&#39;:// What would you like to say?//]
 [[Thank you. Where were you when the King died?-&gt;Wizard-2-1]]
 [[Did you know that Augustus is your child?-&gt;Wizard-2-2]]
-[[Did you kill the king?-&gt;Wizard-2-3]]</tw-passagedata><tw-passagedata pid="73" name="Wizard-2-1" tags="" position="2480,120" size="100,100">(text-colour:green)[&#39;&#39;Wizard&#39;&#39;: I was with Regin- ah, I mean the Queen, all night when he was murdered.
+[[Did you kill the king?-&gt;Wizard-2-3]]
+[[That&#39;s all for now-&gt;Wizard&#39;s tower]] </tw-passagedata><tw-passagedata pid="73" name="Wizard-2-1" tags="" position="2480,120" size="100,100">(text-colour:green)[&#39;&#39;Wizard&#39;&#39;: I was with Regin- ah, I mean the Queen, all night when he was murdered.]
 (text-colour:blue)[&#39;&#39;Detective&#39;&#39;: Do you have an alibi?]
 (text-colour:green)[&#39;&#39;Wizard&#39;&#39;: No I don’t, you will just have to take my word for it. However I do have a way to prove my innocence.]
 (text-colour:blue)[&#39;&#39;Detective&#39;&#39;: How so?]
 (text-colour:green)[&#39;&#39;Wizard&#39;&#39;: Based off of the body I am assuming the King was stabbed repeatedly. As a man of science, I do not possess the physical aptitude to wield a sword, let alone stab someone multiple times. I can prove it, hand me the murder weapon.]
 (text-colour:blue)[&#39;&#39;Detective&#39;&#39;:// What do you do?//]
 [[Give him the pommel-&gt;Wizard-3-1]]
-[[Tell him that is not enough evidence to prove his innocence.-&gt;Wizard-3-2]]</tw-passagedata><tw-passagedata pid="74" name="Wizard-2-2" tags="" position="2484,226" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="75" name="Wizard-2-3" tags="" position="2486,337" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="76" name="Wizard-3-1" tags="" position="2610,59" size="100,100">(text-colour:navy)[// You hand Lothar the pommel. He grunts, and begins to strain to even lift it to a proper swinging height. Based off of this, it is clear that Lothar could not have been the one handling the sword. Lothar wipes the sweat off of his forehead and hands the pommel back to you.//]
+[[Tell him that is not enough evidence to prove his innocence.-&gt;Wizard-3-2]]
+[[Noted.-&gt;Wizard-1]]</tw-passagedata><tw-passagedata pid="74" name="Wizard-2-2" tags="" position="2484,226" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="75" name="Wizard-2-3" tags="" position="2486,337" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="76" name="Wizard-3-1" tags="" position="2610,59" size="100,100">(text-colour:navy)[// You hand Lothar the pommel. He grunts, and begins to strain to even lift it to a proper swinging height. Based off of this, it is clear that Lothar could not have been the one handling the sword. Lothar wipes the sweat off of his forehead and hands the pommel back to you.//]
 (text-colour:green)[&#39;&#39;Wizard&#39;&#39;: As you can see, I could not have been the murderer. Any other questions detective?]
 (text-colour:blue)[&#39;&#39;Detective&#39;&#39;: If you were not the murderer, who do you suspect?]
 (text-colour:green)[&#39;&#39;Wizard&#39;&#39;: Why, isn’t it obvious? It was clearly the blacksmith. He has the most motive given the death of his son due to the disagreement with the king about burning the village. He also has the physical capabilities.]
 (text-colour:blue)[&#39;&#39;Detective&#39;&#39;: Hmm I see, thank you for your input.]
-(text-colour:navy)[// As you turn to leave, you bump into a box containing various spells and incantations. One of them has a depiction of a necklace with a symbol of an eagle. It looks strangely familiar, but you can’t place exactly where you could have seen it before. The spell gives you a weird creepy vibe. As you stare, Lothar rushes over to clean the mess, and he swats your hand away.//]
+(text-colour:navy)[// As you turn to leave, you bump into a box containing various spells and incantations. One of them has a depiction of a necklace with a symbol of an eagle. It looks strangely familiar, but you can’t place exactly where you could have seen it before. The spell gives you a weird creepy feeling. As you stare, Lothar rushes over to clean the mess, and he swats your hand away.//]
 (text-colour:green)[&#39;&#39;Wizard&#39;&#39;: Don’t worry about this, I can clean up. It is highly sensitive magic that should not be touched by anyone else.]
-(text-colour:navy)[// You find the Wizard’s behavior to be very odd, but leave anyway. Who would you like to question next?//]
-</tw-passagedata><tw-passagedata pid="77" name="Wizard-3-2" tags="" position="2607,178" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+(text-colour:navy)[//Perhaps you should question the blacksmith about the wizard&#39;s suspicions.//]
+(set: $inventory to $inventory + (a: &quot;knowledge: wizard&quot;))
+[[Leave the Wizard tower-&gt;wizard tower door]]
+</tw-passagedata><tw-passagedata pid="77" name="Wizard-3-2" tags="" position="2607,178" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="78" name="Bjorn After Wizard" tags="" position="417,1099" size="100,100">(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: I appreciate your cooperation.]
+(text-colour:red)[&#39;&#39;Blacksmith&#39;&#39;: Arne my little eagle was my everything. He was clever and wise and he was all I had left after my wife died. He always admired those who served in the king’s army. He used to say ‘Daddy Daddy one day I’m gonna be like those soldiers tall and brave. I’m gonna be like them while wielding a sword you made.’ As soon as he turned of age to join he put himself through rigorous training and made a fine soldier. However one of their first mission’s was to invade a nearby village and burn it to the ground.]
+(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: What did your son think of the mission?]
+(text-colour:red)[&#39;&#39;Blacksmith&#39;&#39;: My boy didn’t agree with harming innocents he always had a strong moral compass like that. He voiced his thoughts to the commander of the army and they laughed at him. He thought that maybe if he went directly to the king things might be different and he could stop the village from being harmed. The king yelled and berated my son for being a coward and disobeying orders. Arne came to me with his problem and I commended him for doing all that he could but explained that this was how life was and that sometimes people don’t do the right thing because that is not convenient for them.]
+(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: What did your son do after that?]
+(text-colour:red)[&#39;&#39;Blacksmith&#39;&#39;:[//The blacksmith starts getting noticeably choked up and takes a few shaky breaths to calm down//]
+(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: Take your time.]
+(text-colour:red)[&#39;&#39;Blacksmith&#39;&#39;: I’m alright. After talking to me my son decided that he would prevent that village from being burned by warning all the civilians ahead of time. He saved all of them at the cost of his own life. When the king found out that Arne had gone out of his way to obstruct the mission he was enraged. His majesty announced that my son was to be publicly executed by 1000 cuts from a blade and fire to burn the remains. My son… my son was a hero. I’m proud of him and that he stood up for what he believed in.]
+(text-colour:blue)[&#39;&#39;Detective&#39;&#39;:// You watch as Björn grabs something underneath his shirt and clutch it in his hands as tears slowly fall down his face.//]
+(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: What is that you’re holding?]
+(text-colour:red)[&#39;&#39;Blacksmith&#39;&#39;:// He pulls out a necklace from under his shirt// This is the pendant I gave my son when he was born. It is why he was named Arne because it means eagle. He always wore this eagle pendant and he said it gave him strength and grounded his resolve in his time of need. When he died all that I had left was this necklace.]
+(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: I’m so sorry for your loss it must be hard without your son.]
+(text-colour:red)[&#39;&#39;Blacksmith&#39;&#39;: Thank you and you’re right it is hard without my boy but I still have a piece of him with me. I went to Lothar The wizard and I asked him if he could help me preserve my happiest memories of my son in this pendant. The spell worked so now whenever I want I can grip my necklace and I enter a dream-like state where I can relive my best memories.]
+(text-colour:blue)[&#39;&#39;Detective&#39;&#39;:// What would you like to say?//]
+[[Wow that&#39;s an amazing spell-&gt;BjornWizard-1]]
+(if: $inventory does not contain &quot;knowledge: blacksmith&quot;)[
+[[Amazing, does it have any side effects?-&gt;BjornWizard-2]]]
+[[Seems like a scary procedure-&gt;BjornWizard-3]]
+</tw-passagedata><tw-passagedata pid="79" name="BjornWizard-1" tags="" position="284,938" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="80" name="BjornWizard-2" tags="" position="245,1074" size="100,100">(text-colour:red)[&#39;&#39;Blacksmith&#39;&#39;: There does seem to be some side-effects. I do lose track of time and find myself in these random places. It feels like as I’m dreaming my body is being controlled by something else. But all of these side-effects are nothing compared to being able to see my son again.]
+(text-colour:blue)[&#39;&#39;Detective&#39;&#39;:// At his words you suddenly remember the spell that gave you chills with the picture of the eagle on it. The spell seemed too sinister and dark for it to be just allowing someone to relive memories.//]
+(text-colour:red)[&#39;&#39;Blacksmith&#39;&#39;: If you don’t have any other question Detective I think I would like to be alone to recover.]
+(set: $inventory to $inventory + (a: &quot;knowledge: blacksmith&quot;))
+[[Of course again thank you for your time.-&gt;Forge]]</tw-passagedata><tw-passagedata pid="81" name="BjornWizard-3" tags="" position="267,1240" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="82" name="End-1" tags="" position="443,706" size="100,100">(if: ($inventory&#39;s length &lt; 4))[(text-colour:cyan)[&#39;&#39;You are about to proceed with your final decision, you do not have all of the evidence to make an informed decision -- however you still may make one. Proceed?&#39;&#39;]]
+(if: ($inventory&#39;s length &gt; 4))[(text-colour:cyan)[&#39;&#39;You are about to proceed with your final decision, you have enough evidence to make an informed decision. Proceed?&#39;&#39;]]
+[[Yes-&gt;End-2]]
+[[No-&gt;King&#39;s Court]]</tw-passagedata><tw-passagedata pid="83" name="Cloth-Pickup" tags="" position="2500,761" size="100,100">(set: $inventory to $inventory + (a: &quot;cloth&quot;))
+(go-to: &quot;Garden Guard&quot;)</tw-passagedata><tw-passagedata pid="84" name="End-2" tags="" position="311,700" size="100,100">(text-colour:blue)[&#39;&#39;Detective&#39;&#39;://You call everyone to the court to present your case.//]
+(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: Welcome everyone I believe I have now solved the murder of King Oddleifus. There were many suspects, however I believe I have deducted who the true murderer was.]
+(text-colour:blue)[I have found the following evidence:]
+[Pieces of evidence: (print: $inventory)]
+(if: $inventory contains &quot;Pommel&quot;)[(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: There was a pommel at the murder scene, with an intricate carving.]]
+(if: $inventory contains &quot;cloth&quot;)[(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: In the Garden, there was a bloodied cloth. Which I believe was the cloth that cleaned the murder weapon.]]
+(if: $inventory contains &quot;Pommel&quot;)[(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: There was a pommel at the murder scene, with an intricate carving.]]
+(if: $inventory contains &quot;wizard key&quot;)[(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: I have been made aware of a royal affair, between the Queen and Lother, the wizard]]
+(if: $inventory contains &quot;bottle of alcohol&quot;)[(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: There was a bottle of alcohol, that contained a mysterious liquid.]]
+(if: $inventory contains &quot;knowledge: blacksmith&quot;)[(text-colour:blue)[&#39;&#39;Detective&#39;&#39;: It was revealed to me that there was possibly a malicious spell put upon the blacksmith by an amulet]]
+[[I wil now make my final decision-&gt;Final Decision]]</tw-passagedata><tw-passagedata pid="85" name="Final Decision" tags="" position="197,702" size="100,100">(text-colour:blue)[&#39;&#39;Detective&#39;&#39;:The &#39;&#39;Murderer&#39;&#39; is...]
+[[The Guard!-&gt;Arrest the Guard]]
+[[The Prince!-&gt;Arrest the Prince]]
+[[The Maid!-&gt;Arrest the Maid]]
+[[The Wizard!-&gt;The Wizard]]
+[[The Queen!-&gt;Arrest the Queen]]
+[[The Blacksmith!-&gt;Arrest the Blacksmith]]
+[[The Bard!-&gt;Arrest the Bard]]</tw-passagedata><tw-passagedata pid="86" name="Arrest the Guard" tags="" position="146,396" size="100,100">(text-colour:gray)[&#39;&#39;Guard&#39;&#39;:What! I would never murder the King! I have dedicated my life to the royal family! How &#39;&#39;dare&#39;&#39; you make an accusation like that!]
+(text-colour:#63769c)[&#39;&#39;Royal Guard&#39;&#39;: You will come with me, and you shall be executed for your crimes.//Attempts to arrest guard//]
+(text-colour:gray)[&#39;&#39;Guard&#39;&#39;:&#39;&#39;I committed no crime, and I will not face punishment by you for these actions I did not commit. LONG LIVE THE KINGDOM! //The guard takes out his sword and stabs himself, ending his life//]
+[[Good riddance-&gt;ArrestedIncorrect]]
+[[A shame.-&gt;ArrestedIncorrect]]</tw-passagedata><tw-passagedata pid="87" name="Arrest the Prince" tags="" position="85,624" size="100,100">(text-colour:orange)[&#39;&#39;Prince&#39;&#39;: This Detective has it out for me! You will regret this! //begins to pull out dagger//]
+(text-colour:blue)[&#39;&#39;Detective&#39;&#39;://Pulls out sword and aims it at the prince&#39;s throat// You are under arrest. Do not resist.]
+(text-colour:orange)[&#39;&#39;Prince&#39;&#39;://grunts and drops dagger//]
+(text-colour:gray)[&#39;&#39;Guard&#39;&#39;:You shall be punished for your crimes, prince!]
+[[That was a close one.-&gt;ArrestedIncorrect]]</tw-passagedata><tw-passagedata pid="88" name="Arrest the Maid" tags="" position="90,736" size="100,100">(text-colour:magenta)[&#39;&#39;Maid&#39;&#39;: This has gotta be a joke eh? You don&#39;t really think I killed the Royal Highness.]
+(text-colour:gray)[&#39;&#39;Guard&#39;&#39;:Come with me, you shall be executed for your treason!]
+[[Good riddance-&gt;ArrestedIncorrect]]</tw-passagedata><tw-passagedata pid="89" name="The Wizard" tags="" position="102,850" size="100,100">(text-colour:Green)[&#39;&#39;Wizard&#39;&#39;: //Nervously laughs// I saw who the murderer was, It was &#39;&#39;Bjorn the Blacksmith&#39;&#39; he stabbed the king to death! He was the murderer I tell you!]
+(text-colour:gray)[&#39;&#39;Guard&#39;&#39;: Come with me wizard, this is the end to your dark magic.]
+[[Good riddance-&gt;ArrestedCorrect]] </tw-passagedata><tw-passagedata pid="90" name="Arrest the Queen" tags="" position="113,509" size="100,100">(text-colour:purple)[&#39;&#39;Queen: I would never do such a terrible act to my own husband! Never!&#39;&#39;]
+(text-colour:gray)[&#39;&#39;Guard&#39;&#39;:Come with me, you shall be punished for your crimes.]
+[[Good riddance-&gt;ArrestedIncorrect]]</tw-passagedata><tw-passagedata pid="91" name="Arrest the Blacksmith" tags="" position="97,961" size="100,100">(text-colour:red)[&#39;&#39;Bjorn&#39;&#39;: First this kingdom does an injustice to my son, now the kingdom has done an injustice to me. I didn&#39;t murder your King, but perhaps now that I&#39;m being arrested for the crime, I should have.]
+(text-colour:gray)[&#39;&#39;Guard&#39;&#39;: Your son was a traitor! And now you are!]
+[[Good riddance-&gt;ArrestedIncorrect]] </tw-passagedata><tw-passagedata pid="92" name="Arrest the Bard" tags="" position="92,1080" size="100,100">(text-colour:yellow)[&#39;&#39;Bard&#39;&#39;: You crazed lunatic, I didn&#39;t stab the King to death! I know it was the wizard! It was the Wizard! Not me! You fool!]
+(text-colour:gray)[&#39;&#39;Guard&#39;&#39;: //Takes out sword// Come with me you fool! Your head will roll for this!]
+(text-colour:yellow)[&#39;&#39;Bard&#39;&#39;: Because of you the Kingdom will fall detective!]
+[[We&#39;ll see about that.-&gt;ArrestedIncorrect]] </tw-passagedata><tw-passagedata pid="93" name="ArrestedIncorrect" tags="" position="27,330" size="100,100">(text-colour:cyan)[&#39;&#39;You have made your decision... your choice was:]
+(text-colour:red)[&#39;&#39;Incorrect.&#39;&#39;]
+(text-colour:cyan)[&#39;&#39;Would you like the true murderer revealed?&#39;&#39;]
+[[Yes-&gt;RevealedAnswer]]
+[[No-&gt;Conclusion]]</tw-passagedata><tw-passagedata pid="94" name="RevealedAnswer" tags="" position="603,190" size="100,100">(text-colour:#006969 )[&#39;&#39;The Wizard was the individual behind the murder, after you failed to deduct the true murderer. The wizard fled the Kingdom with the Queen, kidnapping the Prince. This led to the political structure in the Kingdom to collapse, leading to chaos and the eventual destruction of the Kingdom...&#39;&#39;]
+[[The End-&gt;Conclusion]] </tw-passagedata><tw-passagedata pid="95" name="Conclusion" tags="" position="602,315" size="100,100">(text-colour:#006969 )+(align:&quot;=&gt;&lt;=&quot;)[&#39;&#39;Thanks for playing Royal Till&#39; Death&#39;&#39;]
+(text-colour:#006969 )+(align:&quot;=&gt;&lt;=&quot;)[&#39;&#39;Created by:&#39;&#39;]
+(text-colour:#006969 )+(align:&quot;=&gt;&lt;=&quot;)[&#39;&#39;Angel Webster, Benjamin Chavez and Harrison Scapellati&#39;&#39;]
+&lt;img src=&quot;images/royaltilldeathlogo.png&quot; /&gt;</tw-passagedata><tw-passagedata pid="96" name="ArrestedCorrect" tags="" position="32,218" size="100,100">(text-colour:cyan)[&#39;&#39;You have made your decision... your choice was:]
+(text-colour:red)[&#39;&#39;Correct&#39;&#39;]
+(text-colour:cyan)[&#39;&#39;The Wizard orchestrated the murder of the King by giving the blacksmith an amulet that coerced him into killing the King. You have saved the kingdom from destruction.&#39;&#39;]
+[[The End-&gt;Conclusion]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
